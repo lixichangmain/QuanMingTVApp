@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lxc.quanmingtvapp.MainActivity">
+
+    <FrameLayout
+
+        android:id="@+id/framelayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:drawableTop="@drawable/home_selector"
+            android:id="@+id/rb_home_main"
+            android:text="推荐"
+            style="@style/rb_mainmeus" />
+        <RadioButton
+            android:drawableTop="@drawable/category_selector"
+            android:id="@+id/rb_categroy_main"
+            android:text="栏目"
+            style="@style/rb_mainmeus" />
+        <RadioButton
+            android:drawableTop="@drawable/zhibo_selector"
+            android:id="@+id/rb_live_main"
+            android:text="直播"
+            style="@style/rb_mainmeus" />
+        <RadioButton
+            android:drawableTop="@drawable/mine_selector"
+            android:id="@+id/rb_mine_main"
+            android:text="我的"
+            style="@style/rb_mainmeus" />
+    </RadioGroup>
+</LinearLayout>

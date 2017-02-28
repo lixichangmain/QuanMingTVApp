@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textcoll_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@mipmap/new_coin"
+        android:gravity="center"
+        android:text="100" />
+
+    <TextView
+        android:id="@+id/money_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@mipmap/btn_register_pressed"
+        android:gravity="center"
+        android:text="10元"
+        android:textColor="#ff8a7b" />
+
+</RelativeLayout>

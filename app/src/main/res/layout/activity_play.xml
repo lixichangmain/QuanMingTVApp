@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lxc.quanmingtvapp.activity.PlayActivity">
+
+
+    <include
+        layout="@layout/simple_player_view_player"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+
+        />
+
+
+    <!--中间条目布局-->
+    <LinearLayout
+        android:id="@+id/linearLayout_playroom_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="180dp"
+        android:padding="8dp">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img1_playroom"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:clickable="true"
+            fresco:fadeDuration="300"
+            fresco:placeholderImage="@mipmap/head"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:failureImage="@mipmap/head"
+            fresco:failureImageScaleType="centerInside"
+            fresco:roundAsCircle="true"
+            android:src="@mipmap/head" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tx1_playroom"
+                android:text="内容"
+                android:textSize="15dp"
+                android:textColor="#ff000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="内容"
+                android:id="@+id/tx2_playroom"
+                android:textSize="12dp"
+                android:textColor="#ff888888"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关注"
+            android:textSize="10dp"
+            android:drawableTop="@drawable/focus"
+            android:clickable="true"
+            android:gravity="center"
+            />
+<LinearLayout
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/switch1"
+            android:checked="false" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开播提醒"/>
+</LinearLayout>
+
+</LinearLayout>
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:tabSelectedTextColor="#f74946"
+        app:tabIndicatorColor="#f74946"
+        android:layout_below="@+id/linearLayout_playroom_center"
+        android:id="@+id/tabLayout_playroom">
+
+    </android.support.design.widget.TabLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_playhome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:descendantFocusability="afterDescendants"
+        >
+        <CheckBox
+            android:layout_marginTop="5dp"
+           android:button="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_playroom_hot"
+            android:background="@drawable/hot_word_re"/>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/img_playroom_hot">
+
+        <EditText
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText_playroom"
+            android:background="@null"
+            android:paddingTop="10dp"
+            android:textSize="10dp"
+            android:hint="不发弹幕真的不寂寞吗？"/>
+        <ImageView
+
+            android:paddingRight="20dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_playroom_sendmessage"
+            android:src="@drawable/playroom_sendmessage"/>
+        </LinearLayout>
+        <CheckBox
+            android:layout_marginTop="5dp"
+            android:id="@+id/img_playroom_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/live_gift"
+            android:button="@null"
+            />
+    </RelativeLayout>
+<android.support.v4.view.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/tabLayout_playroom"
+    android:layout_above="@+id/relativeLayout_playhome"
+    android:id="@+id/viewpager_playroom"/>
+</RelativeLayout>

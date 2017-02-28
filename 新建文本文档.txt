@@ -1,0 +1,7 @@
+
+//首页list数据
+http://www.quanmin.tv/json/app/index/recommend/list-android.json?02271526&v=3.0.1&os=1&ver=4&toid=1509931114&token=fg9vSYa4c1390a&sid=cc17a9584d602bf0182a3b7b48660ba3
+//首页轮播图和开机广告
+http://www.quanmin.tv/json/page/app_images?v=3.0.1&os=1&ver=4&toid=1509931114&token=fg9vSYa4c1390a&sid=cc17a9584d602bf0182a3b7b48660ba3
+//属性列表
+http://www.quanmin.tv/json/app/index/category/info-android.json?02271540=&toid=1509931114&token=fg9vSYa4c1390a&sid=cc17a9584d602bf0182a3b7b48660ba3&cv=quanmin_3.0.1&ua=PD1612&dev=3e04f275fc50a2e4&conn=WIFI&osversion=android_23&cid=6&nonce=ef14f24f3e3c2cf2bffc583908d60e98&sign=230B974850DC7F2A40B5692C58C21964

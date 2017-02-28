@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="200dp">
+<LinearLayout
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="12dp"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/title_left"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="精彩推荐"
+        android:textSize="9dp"
+        android:textColor="#ff000000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="换一批"
+        android:textSize="7dp"
+        android:clickable="true"
+        android:id="@+id/tx_home_huanyipi"
+        android:textColor="#ff777777"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_home_huanyipi"
+        android:clickable="true"
+        android:src="@mipmap/ic_launcher"/>
+
+</LinearLayout>
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:padding="5dp">
+       <!--左边的部分-->
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:background="#ffffffff"
+           android:layout_marginRight="2dp"
+           android:orientation="vertical">
+
+
+           <ImageView
+               android:id="@+id/img_home_jingcaiTJ1"
+               android:layout_width="match_parent"
+               android:layout_weight="3"
+               android:layout_height="0dp"
+               android:src="@mipmap/ic_launcher"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:layout_marginTop="3dp"
+               android:orientation="horizontal"
+               >
+               <com.facebook.drawee.view.SimpleDraweeView
+
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:clickable="true"
+                   fresco:fadeDuration="300"
+                   fresco:actualImageScaleType="focusCrop"
+                   fresco:placeholderImage="@mipmap/head"
+                   fresco:placeholderImageScaleType="fitCenter"
+                   fresco:failureImage="@mipmap/head"
+                   fresco:failureImageScaleType="centerInside"
+                   android:id="@+id/img_home_jingcaiTJLeft"
+                   fresco:roundAsCircle="true"
+                   android:src="@mipmap/head" />
+               <LinearLayout
+
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="3"
+                       android:text="内容"
+                       android:textColor="#ff000000"
+                       android:textSize="12dp"
+                       android:id="@+id/tx_home_jingcaiTJLeft1"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="3"
+                       android:text="内容"
+                       android:textColor="#ff777777"
+                       android:textSize="8dp"
+                       android:layout_gravity="center|left"
+                       android:id="@+id/tx_home_jingcaiTJLeft2"/>
+
+               </LinearLayout>
+           </LinearLayout>
+       </LinearLayout>
+
+
+
+       <!--右边的部分-->
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:layout_marginLeft="2dp"
+           android:background="#ffffffff"
+           android:orientation="vertical">
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_weight="3"
+               android:layout_height="0dp"
+               android:id="@+id/img_home_jingcaiTJ2"
+               android:radius="3dp"
+               android:background="@drawable/yuanjiao"
+               android:src="@mipmap/ic_launcher"
+               />
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="1"
+               android:layout_marginTop="3dp"
+               android:orientation="horizontal"
+               >
+               <com.facebook.drawee.view.SimpleDraweeView
+
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:clickable="true"
+                   fresco:fadeDuration="300"
+                   fresco:actualImageScaleType="focusCrop"
+                   fresco:placeholderImage="@mipmap/head"
+                   fresco:placeholderImageScaleType="fitCenter"
+                   fresco:failureImage="@mipmap/head"
+                   fresco:failureImageScaleType="centerInside"
+                   fresco:roundAsCircle="true"
+                   android:id="@+id/img_home_jingcaiTJRight"
+                   android:src="@mipmap/head" />
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="3"
+                       android:text="内容"
+                       android:textColor="#ff000000"
+                       android:textSize="12dp"
+                       android:id="@+id/tx_home_jingcaiTJRight1"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="0dp"
+                       android:layout_weight="3"
+                       android:text="内容"
+                       android:textColor="#ff777777"
+                       android:textSize="8dp"
+                       android:layout_gravity="center|left"
+                       android:id="@+id/tx_home_jingcaiTJRight2"/>
+
+               </LinearLayout>
+           </LinearLayout>
+       </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

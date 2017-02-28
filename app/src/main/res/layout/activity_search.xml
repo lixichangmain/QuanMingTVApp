@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="com.lxc.quanmingtvapp.activity.LiveFGactivity.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="9"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_back_pressed" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_search_left" />
+
+        <EditText
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入关键字" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/search_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_search_ok_normal"
+        android:layout_marginEnd="10dp" />
+
+</LinearLayout>

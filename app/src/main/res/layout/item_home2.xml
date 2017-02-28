@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/title_left" />
+
+        <TextView
+            android:id="@+id/tx_home_item2Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="内容"
+            android:textColor="#ff000000"
+            android:textSize="9dp" />
+
+        <TextView
+            android:id="@+id/tx_home_chouchou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="瞅瞅"
+            android:textColor="#ff777777"
+            android:textSize="7dp" />
+
+        <ImageView
+            android:id="@+id/img_home_chouchou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@mipmap/btn_profile_enter" />
+    </LinearLayout>
+
+
+    <!--下面的四个布局-->
+    <!--下面的前两个布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <!--左上-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_home_item2BigZuoShang"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img_home_item2SmallZuoShang"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    fresco:fadeDuration="300"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:placeholderImage="@mipmap/head"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:failureImage="@mipmap/head"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:roundAsCircle="true"
+                    android:src="@mipmap/head" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tx_home_item2ZuoShang1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="3"
+                        android:text="内容"
+                        android:textColor="#ff000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tx_home_item2ZuoShang2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="3"
+                        android:text="内容"
+                        android:textColor="#ff777777"
+                        android:textSize="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--右上-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_home_item2BigYouShang"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img_home_item2SmallYouShang"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    fresco:fadeDuration="300"
+                    fresco:placeholderImage="@mipmap/head"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:failureImage="@mipmap/head"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:roundAsCircle="true"
+                    android:src="@mipmap/head" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tx_home_item2YouShang1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="3"
+                        android:text="内容"
+                        android:textColor="#ff000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tx_home_item2YouShang2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="3"
+                        android:text="内容"
+                        android:textColor="#ff777777"
+                        android:textSize="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--下面的后两个布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <!--左下-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_home_item2BigZuoXia"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img_home_item2SmallZuoXia"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    fresco:fadeDuration="300"
+                    fresco:placeholderImage="@mipmap/head"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:failureImage="@mipmap/head"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:roundAsCircle="true"
+                    android:src="@mipmap/head"  />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tx_home_item2ZuoXia1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="3"
+                        android:text="内容"
+                        android:textColor="#ff000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tx_home_item2ZuoXia2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="3"
+                        android:text="内容"
+                        android:textColor="#ff777777"
+                        android:textSize="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--右下-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_home_item2BigYouXia"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:clickable="true"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/img_home_item2SmallYouXia"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    fresco:fadeDuration="300"
+                    fresco:placeholderImage="@mipmap/head"
+                    fresco:placeholderImageScaleType="fitCenter"
+                    fresco:actualImageScaleType="focusCrop"
+                    fresco:failureImage="@mipmap/head"
+                    fresco:failureImageScaleType="centerInside"
+                    fresco:roundAsCircle="true"
+                    android:src="@mipmap/head" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tx_home_item2YouXia1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="3"
+                        android:text="内容"
+                        android:textColor="#ff000000"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/tx_home_item2YouXia2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="3"
+                        android:text="内容"
+                        android:textColor="#ff777777"
+                        android:textSize="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lxc.quanmingtvapp.fragment.MineFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@mipmap/head_bg">
+
+        <ImageView
+            android:id="@+id/imageView_message_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@mipmap/btn_nav_profile_suggest_logged_in" />
+
+        <ImageView
+            android:id="@+id/imageView_setting_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@mipmap/btn_nav_profile_settings" />
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_mine_tuxiang"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:src="@mipmap/head"
+            fresco:actualImageScaleType="focusCrop"
+            fresco:fadeDuration="300"
+            fresco:failureImage="@mipmap/head"
+            fresco:failureImageScaleType="centerInside"
+            fresco:placeholderImage="@mipmap/head"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundAsCircle="true" />
+
+
+        <TextView
+            android:id="@+id/textView_login_mine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_mine_tuxiang"
+            android:layout_centerInParent="true"
+            android:paddingTop="10dp"
+            android:text="点击登录" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_recharge_minefragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/textseed_minefragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/new_seed"
+                android:drawablePadding="5dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/colltext_minefragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/textseed_minefragment"
+                android:drawableLeft="@mipmap/new_coin"
+                android:drawablePadding="5dp"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btn_racharge_minefragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/icon_recharge"
+                android:onClick="onClick"
+                android:text="充值"
+                android:textColor="#ffffff"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/listView_mine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

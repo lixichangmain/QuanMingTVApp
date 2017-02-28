@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_home_gundong"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_dian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="150dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:clickable="true"
+                android:src="@drawable/dian_selecter" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:clickable="true"
+                android:src="@drawable/dian_selecter" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:clickable="true"
+                android:src="@drawable/dian_selecter" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:clickable="true"
+                android:src="@drawable/dian_selecter" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:clickable="true"
+                android:src="@drawable/dian_selecter" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <GridView
+                android:id="@+id/gridView_home_hander"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnWidth="80dp"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:stretchMode="spacingWidthUniform">
+
+            </GridView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
