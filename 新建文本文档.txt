@@ -21,3 +21,5 @@ http://www.quanmin.tv/json/app/index/category/info-android.json?02271540=&toid=1
 哦原来没有提交
 
 我在提交一次
+
+保持master上文件是最新的在develop上开发功能，在feture上进行bug的修改
