@@ -8,3 +8,6 @@ http://www.quanmin.tv/json/app/index/category/info-android.json?02271540=&toid=1
 
 
 在develop上进行开发
+
+
+测试merge是怎么回事
