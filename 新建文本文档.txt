@@ -13,3 +13,5 @@ http://www.quanmin.tv/json/app/index/category/info-android.json?02271540=&toid=1
 测试merge是怎么回事
 
 在develop的基础之上再创建一个feture分支用来更新功能
+
+再在feture分支上提交一次
